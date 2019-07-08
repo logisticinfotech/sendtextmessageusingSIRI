@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SiriMessageDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipient Name : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3a0-l7-cz9">
+                                <rect key="frame" x="15" y="120" width="135" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2d7-Bm-wZP"/>
+                                    <constraint firstAttribute="width" constant="135" id="Clb-Ds-vBe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLj-dJ-Zs9">
+                                <rect key="frame" x="160.5" y="171" width="199.5" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Message    :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMM-Ww-lef">
+                                <rect key="frame" x="15.5" y="171" width="135" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="43U-nc-Yrr"/>
+                                    <constraint firstAttribute="width" constant="135" id="Xq1-dd-xn4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKF-3l-L2w">
+                                <rect key="frame" x="160" y="120" width="135" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="P8C-My-M6j"/>
+                                    <constraint firstAttribute="width" constant="135" id="WBR-sf-PDX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PLj-dJ-Zs9" firstAttribute="leading" secondItem="JMM-Ww-lef" secondAttribute="trailing" constant="10" id="2J6-WL-Y94"/>
+                            <constraint firstItem="3a0-l7-cz9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="458-Dk-Xle"/>
+                            <constraint firstItem="JMM-Ww-lef" firstAttribute="top" secondItem="3a0-l7-cz9" secondAttribute="bottom" constant="30" id="FFX-OE-oVx"/>
+                            <constraint firstItem="JMM-Ww-lef" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15.5" id="TVM-OF-7NZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PLj-dJ-Zs9" secondAttribute="bottom" priority="750" constant="30" id="YGc-QZ-8Xj"/>
+                            <constraint firstItem="3a0-l7-cz9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="aVN-Bk-fVJ"/>
+                            <constraint firstItem="PLj-dJ-Zs9" firstAttribute="top" secondItem="JMM-Ww-lef" secondAttribute="top" id="gwo-h9-5Zu"/>
+                            <constraint firstItem="IKF-3l-L2w" firstAttribute="leading" secondItem="3a0-l7-cz9" secondAttribute="trailing" constant="10" id="lwb-7M-6Yd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PLj-dJ-Zs9" secondAttribute="trailing" constant="15" id="q82-OR-bHX"/>
+                            <constraint firstItem="IKF-3l-L2w" firstAttribute="top" secondItem="3a0-l7-cz9" secondAttribute="top" id="wZ3-Gb-G1U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblMsg" destination="PLj-dJ-Zs9" id="d8d-In-oyI"/>
+                        <outlet property="lblRecipientName" destination="IKF-3l-L2w" id="TGd-tt-nNy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
